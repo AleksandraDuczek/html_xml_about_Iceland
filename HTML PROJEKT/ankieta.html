@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Islandia</title>
+    <link rel="Stylesheet" href="Style.css" />
+</head>
+<body>
+   
+        <div id="naglowek">
+
+            <h1>Islandia</h1>
+
+            <table>
+                <tr>
+                    <td><img class="islandia" alt="islandia" src="1.jpg" /></td>
+                    <td><img class="islandia" alt="islandia" src="2.jpg" /></td>
+                    <td><img class="islandia" alt="islandia" src="3.jpg" /></td>
+                    <td><img class="islandia" alt="islandia" src="4.jpg" /></td>
+                </tr>
+
+            </table>
+        </div>
+    
+
+    <ol id="menu">
+        <li>
+            <a href="#">Informacje</a>
+            <ul>
+                <li><a href="tabelainformacje.html">Zestawienie informacji w tabeli</a></li>
+                <li><a href="stronyoisl.html">Ciekawe strony o Islandii</a></li>
+                <li><a href="jedzenieinf.html">Kuchnia Islandzka</a></li>
+                <li><a href="miejsca.html">Najpiękniejsze miejsca</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Elementy arystyczne</a>
+            <ul>
+                <li><a href="galeria.html">Galeria miniatur</a></li>
+                <li><a href="svg.html">Grafika svg</a></li>
+                <li><a href="animacja.html">Animacja</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="ankieta.html">Ankieta </a>
+        </li>
+    </ol>
+
+
+    <br /><br /><br /><br />
+
+    <div>
+        <div id="dokument">
+
+            <form action="mailto:ola.d.231@interia.pl" method="post" enctype="text/plain">
+                <div>
+                    <div id="ankieta">
+                        <!-- Podstawowe pole tekstowe -->
+                        <input name="Imię" />Podaj swoje imię<br />
+                        <input name="Nazwisko" />Podaj swoje nazwisko
+                        <!-- Pole typu RADIO -->
+                        <p>Podaj swoją płeć:</p>
+                        <input type="radio" name="Płeć" value="Kobieta" />Kobieta
+                        <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
+                        <!-- Pole typu RADIO -->
+                        <p>Ile masz lat?</p>
+                        <input type="radio" name="Wiek" value="mniej niż 15" />mniej niż 15<br />
+                        <input type="radio" name="Wiek" value="15-19" />15-19<br />
+                        <input type="radio" name="Wiek" value="20-29" />20-29<br />
+                        <input type="radio" name="Wiek" value="30-39" />30-39<br />
+                        <input type="radio" name="Wiek" value="40-60" />40-60<br />
+                        <input type="radio" name="Wiek" value="więcej niż 60" />więcej niż 60
+                        <!-- Pole typu CHECKBOX -->
+                        <p>Do którego miejsca w Islandii chciałbyś się udać?</p>
+                        <input type="checkbox" name="Miejsce" value=" Reykjavík " /> Reykjavík<br />
+                        <input type="checkbox" name="Miejsce" value="Blue Lagoon" />Blue Lagoon<br />
+                        <input type="checkbox" name="Miejsce" value=" Park Narodowy Thingvellir" /> Park Narodowy Thingvellir<br />
+                        <input type="checkbox" name="Miejsce" value="Inna" />Inne (podaj jaka):
+                        <input name="Miejsce" />
+                        <!-- Lista rozwijalna (typ podstawowy) z zaznaczoną opcją domyślną -->
+                        <p>Czy kiedykolwiek byłeś w Islandii?</p>
+                        <select name="Islandia">
+                            <option selected="selected">Kilkukrotnie</option>
+                            <option>Raz</option>
+                            <option>W ogóle</option>
+                        </select>
+
+
+                        <!-- Przycisk WYŚLIJ -->
+                        <input type="submit" value="Wyślij formularz" />
+                        <!-- Przycisk WYCZYŚĆ DANE -->
+                        <input type="reset" value="Wyczyść dane" />
+
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <footer>
+
+        Autor: <address>Aleksandra Duczek </address>
+
+    </footer>
+
+
+</body>
+</html>

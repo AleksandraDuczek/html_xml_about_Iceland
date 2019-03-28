@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="moje_hobby">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data" type="xs:date" />
+        <xs:element name="student">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="imie" type="xs:string" />
+              <xs:element name="nazwisko" type="xs:string" />
+              <xs:element name="nr_albumu" type="xs:unsignedInt" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Islandia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="opis" type="xs:string" />
+              <xs:element name="informacje_ogólne">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nazwa_kraju" type="xs:string" />
+                    <xs:element name="jezyk_urzedowy" type="xs:string" />
+                    <xs:element name="powierzchnia" type="xs:string" />
+                    <xs:element name="liczba_ludnosci" type="xs:string" />
+                    <xs:element name="stolica" type="xs:string" />
+                    <xs:element name="jezyk">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="rodzaj" type="xs:string" use="required" />
+                            <xs:attribute name="grupa" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="jezyk">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="rodzaj" type="xs:string" />
+                    <xs:element name="grupa" type="xs:string" />
+                    <xs:element name="liczba_mowiacych" type="xs:unsignedShort" />
+                    <xs:element name="link">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="adres" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="kraj" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="miasta">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:choice maxOccurs="unbounded">
+                      <xs:element name="miasto">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="typ" type="xs:string" use="optional" />
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="data_zalozenia" type="xs:unsignedShort" />
+                      <xs:element name="powierzchnia" type="xs:string" />
+                      <xs:element name="kod_pocztowy" type="xs:string" />
+                    </xs:choice>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="podroz_do_Islandii">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="bilet">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="godzina_wylotu" type="xs:string" />
+                          <xs:element name="godzina_przylotu" type="xs:string" />
+                          <xs:element name="cena" type="xs:unsignedShort" />
+                          <xs:element name="linia" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="data" type="xs:date" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="logo" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

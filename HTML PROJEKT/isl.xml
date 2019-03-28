@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+
+<MojeHobby Skrot="Islandia">
+  <Slawni_Islandczycy>
+    <Sportowcy DoDaty="01-11-2016">
+      <Pilkarz Państwo="Islandia">
+        <Imie>Eiður </Imie>
+        <Nazwisko> Guðjohnsen</Nazwisko>
+          <Wiek>30</Wiek>
+        <Waga>80</Waga>
+        <Numer>22</Numer>
+        <Start_kariery>1993</Start_kariery>
+      </Pilkarz>
+      <Pilkarz Państwo="Islandia">
+        <Imie>Fjalar</Imie>
+        <Nazwisko>Þorgeirsson</Nazwisko>
+        <Wiek>33</Wiek>
+        <Waga>94</Waga>
+        <Numer>1</Numer>
+        <Start_kariery>2000</Start_kariery>
+      </Pilkarz>
+      <Pilkarz_Reczny Państwo="Islandia">
+        <Imie>Guðmundurn</Imie>
+        <Nazwisko> Hrafnkelsso</Nazwisko>
+        <Wiek>46</Wiek>
+        <Waga>80</Waga>
+       <Numer>4</Numer>
+        <Start_kariery>1995</Start_kariery>
+      </Pilkarz_Reczny>
+          </Sportowcy>
+
+
+    <Pisarze DoRoku="1990">
+      <Pisarz>
+        <Imie>Stefán </Imie>
+        <Nazwisko>  Máni</Nazwisko>
+        <Rok_Urodzenia>1970</Rok_Urodzenia>
+        <Gatunek>kryminal </Gatunek>
+      </Pisarz>
+      <Pisarz>
+        <Imie>  Gunnar   </Imie>
+        <Nazwisko>Gunnarsson</Nazwisko>
+        <Rok_Urodzenia>1889</Rok_Urodzenia>
+        <Gatunek>nowele </Gatunek>
+      </Pisarz>
+      <Pisarz>
+        <Imie>Baldvin  </Imie>
+        <Nazwisko>  Einarsson</Nazwisko>
+        <Rok_Urodzenia>1801</Rok_Urodzenia>
+        <Gatunek>dramat</Gatunek>
+      </Pisarz>
+    </Pisarze>
+  </Slawni_Islandczycy>
+
+  <Informacje>
+    <Miasta>
+      <Miasto>
+        <Nazwa>Reykjavík</Nazwa>
+        <Powierzchnia> 	274,5 </Powierzchnia>
+        <KodPocztowy>101-155</KodPocztowy>
+        <PrawaMiejskieKiedy>1786-08-18</PrawaMiejskieKiedy>
+      </Miasto>
+      <Miasto>
+        <Nazwa>Akureyri</Nazwa>
+        <Powierzchnia> 	133 </Powierzchnia>
+        <KodPocztowy>600-603</KodPocztowy>
+      </Miasto>
+      <Miasto>
+        <Nazwa>Seyðisfjörður</Nazwa>
+        <Powierzchnia> 213 </Powierzchnia>
+        <KodPocztowy>100-710</KodPocztowy>
+      </Miasto>
+    </Miasta>
+    </Informacje>
+
+    <WielkieSzlemy WielkiSzlem="1999-05-26" Legenda="Roger Federer">
+      <AO>4</AO>
+      <RG>1</RG>
+      <Wimbledon>7</Wimbledon>
+      <US>5</US>
+    </WielkieSzlemy>
+  </Info>
+</MojeHobby>

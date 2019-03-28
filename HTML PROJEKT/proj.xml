@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<moje_hobby>
+  <data> 2016-11-26 </data>
+
+  <student>
+    <imie> Aleksandra </imie>
+    <nazwisko> Duczek </nazwisko>
+    <nr_albumu> 165675 </nr_albumu>
+  </student>
+
+  <Islandia logo="1.jpg">
+    <opis> Islandia </opis>
+
+    <informacje_ogólne>
+      <nazwa_kraju>Islandia</nazwa_kraju>
+      <jezyk_urzedowy> islandzki </jezyk_urzedowy>
+      <powierzchnia>103 125</powierzchnia>
+      <liczba_ludnosci> 332 529 </liczba_ludnosci>
+      <stolica>Reykjavík</stolica>
+      <flaga logo="flaga.png"></flaga>
+    </informacje_ogólne>
+
+    <jezyk kraj="IS">
+      <rodzaj> jezyk naturalny </rodzaj>
+      <grupa> jezyk nordycki </grupa>
+      <liczba_mowiacych> 32000 </liczba_mowiacych>
+      <link adres="https://pl.wikipedia.org/wiki/J%C4%99zyk_islandzki">Otwórz!</link>
+    </jezyk>
+
+    <miasta>
+
+      <miasto typ="stolica"> Reykjavík </miasto>
+      <data_zalozenia> 874 </data_zalozenia>
+      <powierzchnia> 274,5 </powierzchnia>
+      <kod_pocztowy> 	101-155 </kod_pocztowy>
+
+      <miasto> Akureyri </miasto>
+      <data_zalozenia> 1000 </data_zalozenia>
+      <powierzchnia> 133</powierzchnia>
+      <kod_pocztowy> 	600-603</kod_pocztowy>
+
+      <miasto> Akranes </miasto>
+      <data_zalozenia> 1009 </data_zalozenia>
+      <powierzchnia> 	736,67</powierzchnia>
+      <kod_pocztowy> 	600-606</kod_pocztowy>
+
+    </miasta>
+
+    <podroz_do_Islandii>
+
+
+        <bilet data="2016-12-23">
+          <godzina_wylotu> 07:50 </godzina_wylotu>
+          <godzina_przylotu> 16:55 </godzina_przylotu>
+          <cena> 225 </cena>
+          <linia> Ryanair </linia>
+        </bilet>
+
+      <bilet data="2016-12-09">
+      <godzina_wylotu> 8:30 </godzina_wylotu>
+        <godzina_przylotu> 18:00 </godzina_przylotu>
+        <cena> 400 </cena>
+        <linia> Wowair </linia>
+      </bilet>
+
+      <bilet data="2016-12-09">
+        <godzina_wylotu> 18:00 </godzina_wylotu>
+        <godzina_przylotu> 06:00 </godzina_przylotu>
+        <cena> 600 </cena>
+        <linia> LOT </linia>
+      </bilet>
+
+      </podroz_do_Islandii>
+      
+  </Islandia>
+
+  </moje_hobby>

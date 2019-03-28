@@ -1,0 +1,162 @@
+﻿<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:element name="MojeHobby" type="MojeHobbyTyp"/>
+
+  <xsd:complexType name="MojeHobbyTyp">
+    <xsd:sequence>
+      <xsd:element name="Slawni_Islandczycy" type="Slawni_Islandczycy_Typ"/>
+      <xsd:element name="Informacje" type="InformacjeTyp"/>
+    </xsd:sequence>
+    <xsd:attribute name="Skrot" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:complexType name="Slawni_Islandczycy_Typ">
+    <xsd:sequence>
+      <xsd:element name="Sportowcy">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Pilkarz" type="Pilkarz_Typ" />
+          </xsd:sequence>
+          <xsd:attribute name="DoDaty" type="xsd:int"/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Pisarze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Pisarz" type="Pisarz_Typ" minOccurs="5" maxOccurs="unbounded"/>
+          </xsd:sequence>
+          <xsd:attribute name="DoRoku" type="xsd:int"/>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="InformacjeTyp">
+    <xsd:all>
+      <xsd:element name="Miasta">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="Miasto" type="MiastoTyp" maxOccurs="unbounded"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Cos" type="CosTyp"/>
+    </xsd:all>
+  </xsd:complexType>
+
+  <xsd:complexType name="PilkarzTyp">
+    <xsd:sequence>
+      <xsd:group ref="Grupa" />
+      <xsd:element name="Waga" type="WagaTyp"/>
+      <xsd:element name="Numer" type="NumerTyp"/>
+      <xsd:element name="StartKariery" type="StartKarieryTyp"/>
+    </xsd:sequence>
+    <xsd:attribute ref="Państwo" />
+  </xsd:complexType>
+
+  <xsd:complexType name="PisarzTyp">
+    <xsd:sequence>
+      <xsd:group ref="Grupa" />
+      <xsd:element name="Gatunek" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="MiastoTyp">
+    <xsd:sequence>
+      <xsd:element name="Nazwa" type="xsd:string"/>
+      <xsd:element name="Powierzchnia" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:int">
+            <xsd:minExclusive value="80"/>
+            <xsd:maxExclusive value="300"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="KodPocztowy" minOccurs="0" maxOccurs="1"> !!!!!!!!!!!!!!!!!!! UZUPEŁNIJ
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:int">
+            <xsd:minExclusive value="0"/>
+            <xsd:maxExclusive value="10000"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute ref="Państwo" /> ??????????????????????
+  </xsd:complexType>
+
+  <xsd:complexType name="CosTyp">
+    <xsd:sequence>
+      <xsd:element name="AO" type="xsd:int"/>
+      <xsd:element name="RG" type="xsd:int"/>
+      <xsd:element name="Wimbledon" type="xsd:int"/>
+      <xsd:element name="US" type="xsd:int"/>
+    </xsd:sequence>
+    <xsd:attribute name="WielkiSzlem" type="xsd:date"/>
+    <xsd:attribute name="Legenda" type="xsd:string"/>
+  </xsd:complexType>
+
+  <xsd:simpleType name="WagaTyp">
+    <xsd:restriction base="xsd:int">
+      <xsd:minExclusive value="50"/>
+      <xsd:maxExclusive value="110"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="WiekTyp">
+    <xsd:restriction base="xsd:int">
+      <xsd:minExclusive value="1"/>
+      <xsd:maxExclusive value="100"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="StartKarieryTyp">
+    <xsd:restriction base="xsd:int">
+      <xsd:minExclusive value="1970"/>
+      <xsd:maxExclusive value="2016"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="NumerTyp">
+    <xsd:restriction base="xsd:int">
+      <xsd:minExclusive value="0"/>
+      <xsd:maxExclusive value="900"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Gatunek">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="dramat"/>
+      <xsd:enumeration value="nowela"/>
+      <xsd:enumeration value="kryminal"/>
+      <xsd:enumeration value="opowiadanie"/>
+      <xsd:enumeration value="epopeja"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:group name="Grupa" >
+    <xsd:sequence>
+      <xsd:element name="Imie" type="xsd:string" />
+      <xsd:element name="Nazwisko" type="xsd:string" />
+      <xsd:element name="Wiek" type="WiekTyp"/>
+    </xsd:sequence>
+  </xsd:group>
+
+  <xsd:attribute name="Państwo" type="xsd:string" />
+
+  <xsd:simpleType name="CosCosTyp">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{2}-\d{2}-\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:complexType name="PrawaMiejskieKiedy">
+    <xsd:complexContent>
+      <xsd:extension base="MiastoTyp">
+        <xsd:sequence>
+          <xsd:element name="PrawaMiejskieKiedy" type="xsd:date"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+</xsd:schema>

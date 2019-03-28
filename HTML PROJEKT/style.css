@@ -1,0 +1,519 @@
+﻿
+html
+{
+    height:100%
+}
+
+body
+{
+      background-color: lavender;
+   font-family: Cambria;
+   margin:0;
+	padding:0;
+	 height:100%;
+     position:relative;
+}
+
+#srodek
+{
+    width:1550px;
+    padding:10px;
+padding-bottom:60px;
+position:relative;
+
+}
+
+#zdjecia
+{
+    width:1000px;
+    padding:90px;
+padding-bottom:100px;
+position:relative;
+
+}
+
+#dokument 
+
+{
+    width:1550px;
+    padding:10px;
+padding-bottom:60px;
+position:relative;
+
+}
+
+#ankieta 
+{
+    width:1550px;
+    padding:10px;
+padding-bottom:60px;
+position:relative;
+left: 2%;
+text-align: center;
+
+}
+
+#miniatury
+{
+  
+    width:1550px;
+    padding:10px;
+padding-bottom:60px;
+position:relative;
+left: 10%;
+
+}
+
+ h1
+  {
+   font-size:45px;
+	color:crimson;
+    text-align:center;
+    font-family: fantasy;
+    position: relative;
+
+ }
+
+ h2
+ {
+      font-size:35px;
+	color:crimson;
+    text-align:center;
+    font-family: black;
+    position: relative;
+
+
+ }
+
+
+
+ p{
+     font-size:20px;
+	color:black;
+    text-align:center;
+    font-family: Cambria;
+    position: center;
+    
+ }
+
+
+ table {
+        border-collapse:collapse;
+         width:1100px;
+  height:130px;
+  margin:0 auto;
+  padding:0;
+  list-style-type:none;
+ border: none; 
+	border-collapse:collapse;
+      }
+
+
+.tabeladruga {
+     border-collapse:collapse;
+         width:1000px;
+  height:400px;
+  margin:0 auto;
+    list-style-type:none;
+padding: 0px;
+border: solid black 5px;  
+	border-collapse:collapse;
+	text-align:center;
+
+
+ }
+
+td
+{		
+		padding-top:0px;
+		border: none;
+}
+
+
+img.jedzenie
+
+{
+        width:350px;
+    height: 220px;
+    float: right;
+
+
+}
+
+
+img.jedzenie1
+
+{
+        width:350px;
+    height: 220px;
+    float: left;
+
+
+}
+
+img.park
+
+{
+        width:200px;
+    height: 140px;
+    float: right;
+
+
+}
+
+
+img.park1 {
+    width: 200px;
+    height:140px;
+    float: left;
+}
+
+img.stolica
+
+{
+        width:200px;
+    height: 140px;
+    float: right;
+
+
+}
+
+
+img.stolica2 {
+    width: 200px;
+    height: 140px;
+    float: left;
+}
+
+img.blue
+
+{
+       
+    height: 140px;
+     float: right;
+    width: 15%
+
+
+
+}
+
+img.blue1
+
+{
+    height: 140px;
+    float: right;
+    width: 15%
+
+}
+
+img.blue2
+
+{
+        
+    height: 140px;
+      float: right;
+    width: 15%
+
+
+}
+
+ img.flaga
+ {
+     width:100px;
+     height:100 px;
+
+
+ }
+
+ img.islandia
+ {
+    width:250px;
+    height: 110px;
+   position: center;
+
+ }
+
+img.dolinkow1
+{
+     position: relative; 
+     left: 32%; 
+     top: 8px;
+  width:250px;
+    height: 100px;
+
+}
+
+img.dolinkow2
+{
+     position: relative; 
+     left:36%; 
+     top: 8px;
+    width:220px;
+    height: 165px;
+
+}
+
+
+img.dolinkow3
+{
+     position: relative; 
+     left: 40%; 
+     top: 8px;
+ width:250px;
+    height: 100px;
+
+}
+
+
+
+ /*animacja tekstu*/
+   #rodzic {
+        width:500px;
+        height:50px;
+        font-size:24px;
+        margin:0 auto;
+        text-align:center;
+        padding:60px;
+padding-bottom:60px;
+
+      }
+
+      #rodzic > span {
+        display:block;
+        float:left;
+        width:40px;
+        line-height:40px;
+        margin:0 5px;
+        border:3px solid crimson;
+        background-color:#FFF;
+        border-radius:6px;
+        animation:animowany_tekst 5s linear infinite;
+        -webkit-animation:animowany_tekst 5s linear infinite; /* dla Google Chrome, Safari, Opera 15+ */
+      }
+
+      #rodzic > span:nth-child(1) {
+        animation-delay:250ms;
+        -webkit-animation-delay:250ms;
+      }
+
+      #rodzic > span:nth-child(2) {
+        animation-delay:500ms;
+        -webkit-animation-delay:500ms;
+      }
+
+      #rodzic > span:nth-child(3) {
+        animation-delay:750ms;
+        -webkit-animation-delay:750ms;
+      }
+
+      #rodzic > span:nth-child(4) {
+        animation-delay:1000ms;
+        -webkit-animation-delay:1000ms;
+      }
+
+      #rodzic > span:nth-child(5) {
+        animation-delay:1250ms;
+        -webkit-animation-delay:1250ms;
+      }
+
+      #rodzic > span:nth-child(6) {
+        animation-delay:1500ms;
+        -webkit-animation-delay:1500ms;
+      }
+
+      #rodzic > span:nth-child(7) {
+        animation-delay:1750ms;
+        -webkit-animation-delay:1750ms;
+      }
+
+      #rodzic > span:nth-child(8) {
+        animation-delay:2000ms;
+        -webkit-animation-delay:2000ms;
+      }
+
+      /*------------------------ANIMACJA------------------------*/
+      @keyframes animowany_tekst
+      {
+        0% {transform:rotate(0);}
+        10% {transform:rotate(360deg);}
+        100% {transform:rotate(360deg);}
+      }
+
+      @-webkit-keyframes animowany_tekst /* dla Google Chrome, Safari, Opera 15+ */
+      {
+        0% {-webkit-transform:rotate(0);}
+        10% {-webkit-transform:rotate(360deg);}
+        100% {-webkit-transform:rotate(360deg);}
+      }
+
+ /* grafika svg */
+
+         #svg
+         {
+             animation-name:svg;
+            width:296px;
+            height:330px;
+         }
+            #svg1
+         {
+             animation-name:svg;
+            width:296px; 
+            height:330px;
+         }
+             #svg2
+         {
+             animation-name:svg;
+            width:296px; 
+            height:330px;
+         }
+              #svg3
+         {
+             animation-name:svg;
+            width:296px; 
+            height:330px;
+         }
+               #svg4
+         {
+             animation-name:svg;
+            width:296px; 
+            height:330px;
+         }
+
+         /* ------------------------ POZIOME MENU CSS ------------------------ */
+        /* wygląd elementu - ol */
+        #menu {
+            width: 500px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: none;
+            background-color: #DDD;
+            height: 40px;
+        }
+
+            /* naprawa wysokości elementu - ol */
+            #menu:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+
+            /* wygląd elementów - li */
+            #menu > li {
+                float: left;
+             
+            }
+
+                /* pierwszy element - li - elementu o identyfikatorze menu */
+                #menu > li:first-child {
+              
+                      width: 30%;
+                      height: 100%;
+
+
+
+                }
+
+                    /* drugi element - li - elementu o identyfikatorze menu */
+                    #menu > li:first-child + li {
+                       
+                         width: 40%;
+                         height: 100%;
+                    }
+
+                        /* trzeci element - li - elementu o identyfikatorze menu */
+                        #menu > li:first-child + li + li {
+                           
+                            width: 30%;
+                            height: 100%;
+                        }
+
+                /* wygląd elementów - a */
+                #menu > li > a {
+                    display: block;
+                    padding: 15px;
+                    text-decoration: none;
+                    text-align: center;
+                    color: #000;
+                    background-color: #DDD;
+                    box-shadow: 0 0 0 1px #FFF inset;
+                    background-image: none;
+                    height:100%;
+                }
+
+                /* wygląd elementów - a - po najechaniu kursorem myszki na element - li */
+                #menu > li:hover > a {
+                    color: #00F;
+                    background-color: #FFF;
+                    background-image: none;
+                }
+
+            /* -------------------- ROZWIJANA CZĘŚĆ MENU CSS -------------------- */
+            /* wygląd elementów - li - rodzica każdej części rozwijanej menu CSS */
+            #menu > li {
+                position: relative;
+            }
+
+                /* wygląd elementów - ul */
+                #menu > li > ul {
+                    width: 100%;
+                    visibility: hidden;
+                    position: absolute;
+                    z-index: 1;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    background-color: whitesmoke;
+                }
+
+                /* wygląd elementów - ul - po najechaniu kursorem myszki na element - li */
+                #menu > li:hover > ul {
+                    visibility: visible;
+                }
+
+                /* wygląd elementów - li */
+                #menu > li > ul > li {
+                    box-shadow: 0 -4px 4px -4px #AAA;
+                }
+
+                    /* wygląd pierwszego dziecka elementu typu - li */
+                    #menu > li > ul > li:first-child {
+                        box-shadow: none;
+                    }
+
+                    /* wygląd ostatniego dziecka elementu typu - li */
+                    #menu > li > ul > li:last-child {
+                        box-shadow: 0 -4px 4px -4px #AAA, 0 4px 4px -4px #AAA;
+                    }
+
+                    /* wygląd elementów - a */
+                    #menu > li > ul > li > a {
+                        display: block;
+                        text-decoration: none;
+                        padding: 15px;
+                        color: #000;
+                    }
+
+                    /* wygląd elementów - a - po najechaniu kursorem myszki na element - li */
+                    #menu > li > ul > li:hover > a {
+                        color: #00F;
+                        background-color: #F0F0F0;
+                        background-image: linear-gradient(#FFF, #EEE, #FFF);
+                    }
+
+                /* --------------- ANIMOWANIE ROZWIJANEJ CZĘŚCI MENU CSS --------------- */
+                /* wygląd elementów - ul */
+                #menu > li > ul {
+                    transform: scaleY(0);
+                    -webkit-transform: scaleY(0);
+                    transform-origin: 50% 0;
+                    -webkit-transform-origin: 50% 0;
+                    transition: 250ms;
+                }
+
+                /* wygląd elementów - ul - po najechaniu kursorem myszki na element - li */
+                #menu > li:hover > ul {
+                    transform: scaleY(1);
+                    -webkit-transform: scaleY(1);
+                }
+
+     
